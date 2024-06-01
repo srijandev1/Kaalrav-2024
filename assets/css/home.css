@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.desktop img{
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+}
+.mobile{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .mobile{
+        display: flex;
+        width: 100svw;
+        height: 100svh;
+        background-size: auto;
+        background-repeat: no-repeat;
+        object-fit: fill;
+
+
+    }
+    .mobile img{
+        width: 100%;
+        height: 100%;
+    }
+    .desktop{
+        display: none;
+        width: 0vw;
+        height: 0vh;
+    }
+}

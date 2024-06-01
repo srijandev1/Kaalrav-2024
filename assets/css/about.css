@@ -1,0 +1,138 @@
+.gifdiv img {
+  width: 20vw;
+  margin: 2rem 0;
+}
+.klogo {
+  display: none;
+}
+
+.container2 {
+  position: absolute;
+  top: 55vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 83vw;
+  height: 80vh;
+  border-radius: 1.875rem;
+  background: black;
+  box-shadow: 20px 14px 0px 0px #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  border: 3px dashed #fff;
+  z-index: 11;
+}
+
+.contentaboutus {
+  padding: 1rem 5rem;
+  line-height: 1.75;
+  font-family: poppins;
+  font-size: 1.2rem;
+  height: 65vh;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #art-text {
+    position: absolute;
+    z-index: 60;
+    width: 35vw;
+    top: 7.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gifdiv img {
+    width: 60vw;
+  }
+  .contentaboutus {
+    padding: 0.5rem 2rem;
+  }
+  .container2 {
+    position: absolute;
+    top: 54svh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 83svw;
+    height: 80svh;
+    border-radius: 1.875rem;
+    padding: 1rem;
+    box-shadow: 10px 14px 0px 0px #fff;
+  }
+  .klogo {
+    position: absolute;
+    z-index: 20;
+    width: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 7vh;
+  }
+
+  .mobile {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .background-desktop {
+    /* display: none; */
+  }
+  .background-mobile {
+    display: flex;
+    width: 100svw;
+    height: 100svh;
+    position: relative;
+  }
+  .toggle {
+    position: absolute;
+    z-index: 100;
+    top: 4vh;
+    left: 5vw;
+  }
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 4vh;
+    left: 5vw;
+    z-index: 100;
+    padding: 0.75rem;
+    background-color: #faff0a;
+    border-radius: 1.4rem;
+    box-shadow: 11px 11px 0px 0px #000;
+  }
+  .border {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    border: 2.5px dashed #000;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 1rem;
+  }
+  .border a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px dashed #000;
+    font-size: 1.5rem;
+  }
+  .close {
+    font-size: 2rem !important;
+    text-align: left;
+    border-bottom: none !important;
+  }
+
+  /* loader */
+  .loader {
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .loader img {
+    display: flex;
+  }
+}

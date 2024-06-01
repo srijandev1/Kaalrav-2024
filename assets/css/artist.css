@@ -1,0 +1,52 @@
+.container2 {
+  position: absolute;
+  top: 55vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 83vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.container2 img {
+  width: 20vw;
+  height: auto;
+}
+
+.mntr {
+  width: 27vw !important;
+}
+
+.rajat {
+  width: 16vw !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #art-text {
+    position: absolute;
+    z-index: 60;
+    width: 35vw;
+    top: 7.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container2 {
+    z-index: 20;
+    overflow-y: auto;
+    height: 80svh;
+  }
+  .container2 img {
+    width: 50vw;
+    height: auto;
+  }
+  .mntr {
+    width: 57vw !important;
+  }
+
+  .rajat {
+    width: 56vw !important;
+  }
+}

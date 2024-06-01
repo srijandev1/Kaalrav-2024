@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home1.css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <title><%=title%></title>
+    <meta
+      name="description"
+      content="Welcome to KAALRAV'24, the pinnacle of cultural excellence at Sikkim Manipal Institute of Technology! Join us for three exhilarating days from March 29th to 31st as we celebrate the vibrancy of North-East India through mesmerizing performances, thrilling competitions, and unforgettable experiences."
+    />
+    <meta
+      name="keywords"
+      content="KAALRAV'24, Kaalrav, College cultural fest, Sikkim Manipal Institute of Technology, North-East India, Twin Strings, Mantra, M Sonic, DJ Aerreo, Rajat Chauhan, Cultural competitions, Singing competition, Dancing competition, Treasure Hunt, Trifecta, Fashion show, Cultural extravaganza, SMIT cultural fest, North-Eastern cultural celebration, Performing arts festival"
+    />
+  </head>
+  <body>
+    <%if(loader){%>
+    <div class="loader" id="loader">
+      <div class="divloadeer">
+        <img src="/images/loader1.gif" alt="" srcset="" autoplay />
+      </div>
+      <!-- <div class="devopler">
+          DEVELOPED BY: OM SINKAR - SRIJAN DEV
+        </div> -->
+    </div>
+    <%}else{%> <%}%>
+    <div class="desktop" id="desktop">
+      <img
+        src="/images/home_background_desktop.png"
+        class="background-desktop"
+        loading="lazy"
+        alt=""
+        srcset=""
+      />
+      <img id="logo" class="logo" src="/images/logo.png" alt="" />
+      <a href="https://www.myntra.com/obs-fwd" target="_blank">
+        <img id="logo" class="myntra" src="/images/myntra.png" alt="" />
+      </a>
+      <div class="nav">
+        <a href="" class="play" id="home">
+          <img src="/images/Home.svg" class="home" alt="" />
+        </a>
+        <a href="" id="events" class="play"
+          ><img src="/images/Events.svg" class="events" alt=""
+        /></a>
+        <a href="" id="artists" class="play"
+          ><img src="/images/Artists.svg" class="artist" alt=""
+        /></a>
+        <a href="" id="sponsors" class="play"
+          ><img src="/images/Sponsors.svg" class="sponsors" alt=""
+        /></a>
+        <a href="" id="gallery" class="play"
+          ><img src="/images/Gallery.svg" class="gallery" alt=""
+        /></a>
+        <a href="" id="aboutus" class="play"
+          ><img src="/images/AboutUs.svg" class="about" alt=""
+        /></a>
+      </div>
+      <audio id="audio">
+        <source src="/audio/click.wav" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="mobile">
+      <img id="logo-m" class="logo-m" src="/images/logo-m.png" alt="" />
+      <a href="https://www.myntra.com/obs-fwd" target="_blank">
+        <img id="logo" class="myntra" src="/images/myntra.png" alt="" />
+      </a>
+      <img
+        src="/images/home_background_mobile.png"
+        class="background-mobile"
+        loading="lazy"
+        alt=""
+        srcset=""
+      />
+      <img class="toggle" id="toggle" src="/images/toggle.svg" alt="" />
+      <div class="mobile-nav">
+        <div class="border">
+          <p class="close">X</p>
+          <a href="/home">HOME</a>
+          <a href="/events">EVENTS</a>
+          <a href="/artists">ARTISTS</a>
+          <a href="/sponsors">SPONSORS</a>
+          <a href="/gallery">GALLERY</a>
+          <a href="/aboutus">ABOUT US</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascript/home.js"></script>
+</html>

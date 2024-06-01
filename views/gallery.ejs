@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%=title%>
+  </title>
+  <link rel="stylesheet" href="/css/events.css" />
+  <link rel="stylesheet" href="/css/tv.css" />
+  
+</head>
+
+<body>
+  <div class="desktop" id="desktop">
+    <img src="/images/bg2.png" class="background-desktop" loading="lazy" alt="" srcset="" />
+
+    <div class="nav">
+      <a href="" class="play" id="home">
+        <img src="/images/Home.svg" class="home" alt="" />
+      </a>
+      <a href="" id="events" class="play"><img src="/images/Events.svg" class="events" alt="" /></a>
+      <a href="" id="artists" class="play"><img src="/images/Artists.svg" class="artist" alt="" /></a>
+      <a href="" id="sponsors" class="play"><img src="/images/Sponsors.svg" class="sponsors" alt="" /></a>
+      <a href="" id="gallery" class="play"><img src="/images/Gallery.svg" class="gallery" alt="" /></a>
+      <a href="" id="aboutus" class="play"><img src="/images/AboutUs.svg" class="about" alt="" /></a>
+    </div>
+    <audio id="audio">
+      <source src="/audio/click.wav" type="audio/mpeg" />
+    </audio>
+    <!-- <img src="/images/tv.png" alt="" srcset="" class="tv"> -->
+    <!-- <div class="container2"> -->
+      <div class="slide-container container2">
+        <div class="slide fade">
+          <img src='/images/g1.JPG' alt=''>
+        </div>
+        <div class="slide fade">
+          <img src='/images/g2.JPG' alt=''>
+        </div>
+        <div class="slide fade">
+          <img src='/images/g3.JPG' alt=''>
+        </div>
+        <div class="slide fade">
+          <img src='/images/g4.JPG' alt=''>
+        </div>
+        <div class="slide fade">
+          <img src='/images/g5.JPG' alt=''>
+        </div>
+
+
+        <a href="#" class="prev" title="Previous">&#10094</a>
+        <a href="#" class="next" title="Next">&#10095</a>
+      <!-- </div> -->
+    </div>
+  </div>
+  <div class="mobile">
+    <img id="art-text" src="/images/Gallery.svg" alt="" />
+    <img class="toggle" src="/images/toggle.svg" alt="" />
+    <img id="logo" class="logo" src="/images/logo2.png" alt="" />
+    <div class="mobile-nav">
+      <div class="border">
+        <p class="close">X</p>
+        <a href="/home">HOME</a>
+        <a href="/events">EVENTS</a>
+        <a href="/artists">ARTISTS</a>
+        <a href="/sponsors">SPONSORS</a>
+        <a href="/gallery">GALLERY</a>
+        <a href="/aboutus">ABOUT US</a>
+      </div>
+    </div>
+    <img src="/images/mobile_bg.png" class="background-mobile" loading="lazy" alt="" srcset="" />
+  </div>
+</body>
+<script src="/javascript/home1.js"></script>
+<script src="/javascript/tv.js"></script>
+
+</html>

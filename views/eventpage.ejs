@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/events.css" />
+  </head>
+  <body>
+    <div class="desktop" id="desktop">
+      <img
+        src="/images/bg2.png"
+        class="background-desktop"
+        loading="lazy"
+        alt=""
+        srcset=""
+      />
+
+      <div class="nav">
+        <a href="" class="play" id="home">
+          <img src="/images/Home.svg" class="home" alt="" />
+        </a>
+        <a href="" id="events" class="play"
+          ><img src="/images/Events.svg" class="events" alt=""
+        /></a>
+        <a href="" id="artists" class="play"
+          ><img src="/images/Artists.svg" class="artist" alt=""
+        /></a>
+        <a href="" id="sponsors" class="play"
+          ><img src="/images/Sponsors.svg" class="sponsors" alt=""
+        /></a>
+        <a href="" id="gallery" class="play"
+          ><img src="/images/Gallery.svg" class="gallery" alt=""
+        /></a>
+        <a href="" id="aboutus" class="play"
+          ><img src="/images/AboutUs.svg" class="about" alt=""
+        /></a>
+      </div>
+      <audio id="audio">
+        <source src="/audio/click.wav" type="audio/mpeg" />
+      </audio>
+      <div class="container">
+        <div class="title">
+          <img id="logo" class="logo" src="/images/logo2.png" alt="" />
+          <p><%=tit%></p>
+        </div>
+        <div class="content">
+          <div class="time-date">
+            <h4><%=time%></h4>
+          </div>
+          <p>
+           <%=c1%>
+          </p>
+          <div class="compos">
+            <h4>Team Composition</h4>
+            <p><%=pl%></p>
+          </div>
+          <%if(pt){%>
+          <div class="time">
+            <h4>Performance Time</h4>
+            <p><%=pt%></p>
+          </div>
+          <%}%>
+          <div class="rules">
+            <h4>Rules</h4>
+            <ul>
+              <%for(let i = 0; i<rules.length; i++){%>
+              <li><%=rules[i]%></li>
+              <%}%>
+            </ul>
+          </div>
+          <div class="judgw">
+            <h4>Judging Criteria</h4>
+            <ul>
+              <%for(let i = 0; i<judge.length; i++){%>
+                <li><%=judge[i]%></li>
+                <%}%>
+            </ul>
+          </div>
+          <p>
+            <%=c2%>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mobile">
+      <img class="toggle" src="/images/toggle.svg" alt="" />
+      <div class="mobile-nav">
+        <div class="border">
+          <p class="close">X</p>
+          <a href="/home">HOME</a>
+          <a href="/events">EVENTS</a>
+          <a href="/artists">ARTISTS</a>
+          <a href="/sponsors">SPONSORS</a>
+          <a href="/gallery">GALLERY</a>
+          <a href="/aboutus">ABOUT US</a>
+        </div>
+      </div>
+      <img
+        src="/images/mobile_bg.png"
+        class="background-mobile"
+        loading="lazy"
+        alt=""
+        srcset=""
+      />
+    </div>
+  </body>
+  <script src="/javascript/home1.js"></script>
+</html>
